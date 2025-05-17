@@ -1,6 +1,7 @@
 <script setup>
 import MaterialDesignIcon from '@/components/MaterialDesignIcon.vue';
-import { mdiAlertBox, mdiAlertOctagon, mdiAlertOctagonOutline, mdiCheckCircle, mdiGlasses, mdiPaw } from '@mdi/js';
+import WalkingPaws from '@/components/WalkingPaws.vue';
+import { mdiAlertOctagonOutline, mdiCheckCircle, mdiGlasses, mdiPaw } from '@mdi/js';
 
 </script>
 
@@ -76,18 +77,7 @@ import { mdiAlertBox, mdiAlertOctagon, mdiAlertOctagonOutline, mdiCheckCircle, m
         </div>
         <div class="col-md-7">
           <div class="d-flex flex-column justify-content-between h-100 p-5">
-            <div>
-              <div class="w-50 d-flex justify-content-between">
-                <MaterialDesignIcon :icon="mdiPaw" class="paw-rotate mt-3" size="32" />
-                <MaterialDesignIcon :icon="mdiPaw" class="paw-rotate" size="32" />
-              </div>
-              <div class="d-flex justify-content-end">
-                <div class="d-flex justify-content-between w-50">
-                  <MaterialDesignIcon :icon="mdiPaw" class="paw-rotate" size="32" />
-                  <MaterialDesignIcon :icon="mdiPaw" class="paw-rotate mt-4" size="32" />
-                </div>
-              </div>
-            </div>
+            <WalkingPaws />
             <div class="shadow-box-bottom-start-dark bg-light rounded-4 px-4 py-2 border border-dark border-4 mt-5">
               <h3>Walking</h3>
               <p class="my-5">
@@ -176,10 +166,6 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.paw-rotate {
-  transform: rotate(300deg);
 }
 
 @media (max-width: 767.98px) {
