@@ -2,7 +2,7 @@
 
 
 <template>
-  <div class="NavBar bg-warning">
+  <div class="bg-warning">
     <nav>
       <div>
         <RouterLink to="/">
