@@ -7,6 +7,8 @@ const pawStatuses = ref([false, false, false, false])
 const pawIndex = ref(-1)
 
 onMounted(() => {
+  // FIXME what is wrong with this thing
+  return
   setInterval(() => {
     console.log('running');
 
