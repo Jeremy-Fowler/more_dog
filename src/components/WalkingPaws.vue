@@ -7,17 +7,11 @@ const pawStatuses = ref([false, false, false, false])
 const pawIndex = ref(-1)
 
 onMounted(() => {
-  // FIXME what is wrong with this thing
-  return
   setInterval(() => {
-    console.log('running');
-
     pawIndex.value++
-    if (pawIndex.value == pawStatuses.value.length) {
-      pawIndex.value = 0
-    }
+    if (pawIndex.value == pawStatuses.value.length) pawIndex.value = 0
     pawStatuses.value[pawIndex.value] = !pawStatuses.value[pawIndex.value]
-  }, 1000)
+  }, 500)
 })
 
 
@@ -25,15 +19,16 @@ onMounted(() => {
 
 
 <template>
-  <div>
+  <div class="pb-5">
     <div class="w-50 d-flex justify-content-between">
-      <MaterialDesignIcon v-if="pawStatuses[3]" :icon="mdiPaw" class="paw-rotate mt-3" size="32" />
-      <MaterialDesignIcon v-if="pawStatuses[2]" :icon="mdiPaw" class="paw-rotate" size="32" />
+      <MaterialDesignIcon :icon="mdiPaw" class="paw-rotate mt-3" size="32" :class="{ 'opacity-0': !pawStatuses[3] }" />
+      <MaterialDesignIcon :icon="mdiPaw" class="paw-rotate" size="32" :class="{ 'opacity-0': !pawStatuses[2] }" />
     </div>
     <div class="d-flex justify-content-end">
       <div class="d-flex justify-content-between w-50">
-        <MaterialDesignIcon v-if="pawStatuses[1]" :icon="mdiPaw" class="paw-rotate" size="32" />
-        <MaterialDesignIcon v-if="pawStatuses[0]" :icon="mdiPaw" class="paw-rotate mt-4" size="32" />
+        <MaterialDesignIcon :icon="mdiPaw" class="paw-rotate" size="32" :class="{ 'opacity-0': !pawStatuses[1] }" />
+        <MaterialDesignIcon :icon="mdiPaw" class="paw-rotate mt-4" size="32"
+          :class="{ 'opacity-0': !pawStatuses[0] }" />
       </div>
     </div>
   </div>
@@ -43,5 +38,6 @@ onMounted(() => {
 <style scoped lang="scss">
 .paw-rotate {
   transform: rotate(300deg);
+  transition: opacity .2s ease-in-out;
 }
 </style>

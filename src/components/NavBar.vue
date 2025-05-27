@@ -6,7 +6,7 @@ const route = useRoute()
 
 
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-dark border-4">
     <div class="container-fluid">
       <RouterLink class="navbar-brand" to="/">
         More Dog!
