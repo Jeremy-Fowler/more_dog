@@ -11,7 +11,7 @@ import ScheduleButton from './ScheduleButton.vue';
     <div class="row hero-bg">
       <div class="col-12 align-self-center">
         <div>
-          <h1>
+          <h1 class="barrio-font">
             More Dog!
           </h1>
         </div>

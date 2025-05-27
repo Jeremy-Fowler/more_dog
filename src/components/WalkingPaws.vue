@@ -7,12 +7,14 @@ const pawStatuses = ref([false, false, false, false])
 const pawIndex = ref(-1)
 
 onMounted(() => {
-  setInterval(() => {
-    pawIndex.value++
-    if (pawIndex.value == pawStatuses.value.length) pawIndex.value = 0
-    pawStatuses.value[pawIndex.value] = !pawStatuses.value[pawIndex.value]
-  }, 500)
+  setInterval(incrementIndex, 500)
 })
+
+function incrementIndex() {
+  pawIndex.value++
+  if (pawIndex.value == pawStatuses.value.length) pawIndex.value = 0
+  pawStatuses.value[pawIndex.value] = !pawStatuses.value[pawIndex.value]
+}
 
 
 </script>
