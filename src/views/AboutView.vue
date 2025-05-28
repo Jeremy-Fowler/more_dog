@@ -1,9 +1,10 @@
-<script setup></script>
+<script setup>
+import AboutMatt from '@/components/AboutMatt.vue';
+
+</script>
 
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <AboutMatt />
 </template>
 
 <style scoped lang="scss"></style>

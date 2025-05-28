@@ -3,6 +3,7 @@ import { RouterView } from 'vue-router'
 import NavBar from './components/NavBar.vue';
 import ModalWrapper from './components/ModalWrapper.vue';
 import ScheduleForm from './components/ScheduleForm.vue';
+import FooterSection from './components/FooterSection.vue';
 </script>
 
 <template>
@@ -13,7 +14,9 @@ import ScheduleForm from './components/ScheduleForm.vue';
     <RouterView />
   </main>
   <footer>
+    <FooterSection />
   </footer>
+
   <ModalWrapper modalId="scheduleFormModal" modalSize="modal-lg">
     <template #header>
       Schedule a session
