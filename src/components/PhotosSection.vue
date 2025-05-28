@@ -14,7 +14,6 @@ async function getImages() {
     const photoName = fileName
       .substring(fileName.lastIndexOf('/') + 1)
       .replace(/\.\w+$/, '')
-    // const image = await import(``)
     images.push({ path: `images/${photoName}.avif`, name: photoName })
   }
 
