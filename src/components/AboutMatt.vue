@@ -5,7 +5,7 @@
   <section class="container">
     <div class="row align-items-center py-3">
       <div class="col-lg-6">
-        <div>
+        <div class="pb-5">
           <img
             src="https://images.unsplash.com/photo-1592673750632-ef9c1b36c618?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="A man wearing sunglasses" class="shadow-box-bottom-start-dark rounded-4 border border-dark border-4">

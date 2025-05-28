@@ -8,7 +8,7 @@ const route = useRoute()
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-dark border-2">
     <div class="container-fluid">
-      <RouterLink class="navbar-brand" to="/">
+      <RouterLink class="navbar-brand" to="/" title="Go home">
         <span class="barrio-font">More Dog!</span>
       </RouterLink>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -18,8 +18,8 @@ const route = useRoute()
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <RouterLink to="/about" class="nav-link" :class="{ active: route.name == 'about' }"
-              ariaCurrentValue="about">
+            <RouterLink to="/about" class="nav-link" :class="{ active: route.name == 'about' }" ariaCurrentValue="about"
+              title="Go to about page">
               About
             </RouterLink>
           </li>
