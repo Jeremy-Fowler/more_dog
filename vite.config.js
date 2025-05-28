@@ -20,5 +20,6 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist'
-  }
+  },
+  base: '/more_dog/'
 })
