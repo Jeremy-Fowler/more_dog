@@ -28,7 +28,7 @@
 
 <style scoped lang="scss">
 img {
-  max-height: 70dvh;
+  height: 70dvh;
   width: 100%;
   object-fit: cover;
 }

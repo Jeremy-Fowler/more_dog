@@ -31,11 +31,12 @@ import ScheduleButton from './ScheduleButton.vue';
           </div>
           <div class="d-flex gap-3">
             <ScheduleButton />
-            <a href="#services">
+            <!-- FIXME need scrollTo function now -->
+            <!-- <a href="#services">
               <button class="btn btn-outline-dark">
                 Services
               </button>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>

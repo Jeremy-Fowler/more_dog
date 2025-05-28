@@ -25,6 +25,7 @@ async function getImages() {
   <section class="container mt-5">
     <div class="row">
       <div class="col-12">
+        <h2 class="barrio-font">Matt and dogs</h2>
         <div class="masonry-container">
           <div v-for="image in images" :key="image">
             <img @click="activeImage = image" :src="image.path" :alt="image.name"
@@ -41,7 +42,7 @@ async function getImages() {
       Check out this dog
     </template>
     <template #body>
-      <img v-if="activeImage" :src="activeImage.path" :alt="activeImage.name" class="w-100">
+      <img v-if="activeImage" :src="activeImage.path" :alt="activeImage.name">
     </template>
   </ModalWrapper>
 </template>
@@ -57,7 +58,10 @@ async function getImages() {
   }
 
   img {
+    min-height: 300px;
+    width: 100%;
     transition: box-shadow .2s ease-in-out;
+    object-fit: cover;
   }
 
   img:hover {
