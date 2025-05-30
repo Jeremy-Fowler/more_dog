@@ -9,7 +9,7 @@ const route = useRoute()
   <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-dark border-2">
     <div class="container-fluid">
       <RouterLink class="navbar-brand" to="/" title="Go home">
-        <span class="barrio-font">More Dog!</span>
+        <span class="lilita-font">MORE DOG</span>
       </RouterLink>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

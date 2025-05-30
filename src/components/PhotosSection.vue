@@ -42,7 +42,7 @@ async function getImages() {
       Check out this dog
     </template>
     <template #body>
-      <img v-if="activeImage" :src="activeImage.path" :alt="activeImage.name">
+      <img v-if="activeImage" :src="activeImage.path" :alt="activeImage.name" class="img-fluid">
     </template>
   </ModalWrapper>
 </template>

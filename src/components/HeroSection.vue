@@ -1,19 +1,14 @@
 <script setup>
 import ScheduleButton from './ScheduleButton.vue';
-
-
-
 </script>
 
 
 <template>
-  <section class="container-fluid">
+  <section class="container-fluid mb-5">
     <div class="row hero-bg">
       <div class="col-12 align-self-center">
         <div>
-          <h1 class="barrio-font">
-            More Dog!
-          </h1>
+          <img src="/MoreDogFinalLogo.webp" alt="More dog logo" class="logo">
         </div>
       </div>
     </div>
@@ -74,11 +69,14 @@ ul {
   margin: 0;
 }
 
-img {
-  max-height: 75dvh;
-  width: 100%;
-  object-fit: cover;
-  object-position: bottom;
+// img {
+//   max-height: 75dvh;
+//   width: 100%;
+//   object-fit: cover;
+//   object-position: bottom;
+// }
+.logo {
+  max-height: 40dvh;
 }
 
 @media (max-width: 991.98px) {
