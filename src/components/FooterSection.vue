@@ -7,11 +7,12 @@ import MaterialDesignIcon from './MaterialDesignIcon.vue';
 
 <template>
   <div class="bg-dark text-light">
-    <div>
+    <div class="py-3">
       <section class="container">
         <div class="row">
-          <div class="col-12">
-            <div class="d-flex justify-content-center gap-2 py-3">
+          <div class="col-lg-4">
+            <h2 class="fs-6">Social Media</h2>
+            <div class="d-flex gap-2">
               <a href="" target="_blank" class="text-light" title="Check us out on Instagram">
                 <MaterialDesignIcon :icon="mdiInstagram" />
               </a>
@@ -20,6 +21,14 @@ import MaterialDesignIcon from './MaterialDesignIcon.vue';
               </a>
               <a href="" target="_blank" class="text-light" title="Check us out on Facebook">
                 <MaterialDesignIcon :icon="mdiFacebook" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div>
+              <h2 class="fs-6">Contact</h2>
+              <a href="mailto:matt@moredog.ca" class="text-light" title="Send Matt an email">
+                matt@moredog.ca
               </a>
             </div>
           </div>

@@ -1,5 +1,5 @@
-@import '_bootstrap.scss';
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&display=swap');
+@import "_bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&display=swap");
 
 #app {
   min-height: 100dvh;
@@ -11,39 +11,43 @@ main {
   flex-grow: 1;
 }
 
-.inter-font {
+.secondary-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
-.lilita-font {
+.primary-font {
   font-family: "Lilita One", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.shadow-box-top-start-warning{
+textarea, select, input {
+  border:thin solid var(--bs-dark) !important;
+}
+
+.shadow-box-top-start-warning {
   box-shadow: -20px -20px var(--bs-warning);
 }
-.shadow-box-top-end-warning{
+.shadow-box-top-end-warning {
   box-shadow: 20px -20px var(--bs-warning);
 }
-.shadow-box-bottom-start-warning{
+.shadow-box-bottom-start-warning {
   box-shadow: -20px 20px var(--bs-warning);
 }
-.shadow-box-bottom-end-warning{
+.shadow-box-bottom-end-warning {
   box-shadow: 20px 20px var(--bs-warning);
 }
-.shadow-box-top-start-dark{
+.shadow-box-top-start-dark {
   box-shadow: -20px -20px var(--bs-dark);
 }
-.shadow-box-top-end-dark{
+.shadow-box-top-end-dark {
   box-shadow: 20px -20px var(--bs-dark);
 }
-.shadow-box-bottom-start-dark{
+.shadow-box-bottom-start-dark {
   box-shadow: -20px 20px var(--bs-dark);
 }
-.shadow-box-bottom-end-dark{
+.shadow-box-bottom-end-dark {
   box-shadow: 20px 20px var(--bs-dark);
 }

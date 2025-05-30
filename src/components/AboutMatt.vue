@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <h1 class="barrio-font">Meet Matt</h1>
+        <h1 class="primary-font">Meet Matt</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusamus qui dicta nisi commodi harum asperiores
           eius quisquam sit doloribus, iste adipisci voluptatem tempora molestias perspiciatis reiciendis debitis fugit

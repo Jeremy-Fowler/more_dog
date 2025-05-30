@@ -12,7 +12,7 @@ import ScheduleButton from './ScheduleButton.vue';
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2 class="text-center my-4 barrio-font">Services</h2>
+          <h2 class="text-center my-4 primary-font">Services</h2>
         </div>
       </div>
       <div class="row justify-content-between">
@@ -29,7 +29,7 @@ import ScheduleButton from './ScheduleButton.vue';
             <WalkingPaws />
             <div
               class="shadow-box-bottom-start-dark bg-light rounded-4 px-4 py-2 border border-dark border-4 mt-5 service-card">
-              <h3 class="barrio-font">Walking</h3>
+              <h3 class="primary-font">Walking</h3>
               <p class="my-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti quidem facere ad? Odio at
                 sapiente, nesciunt suscipit velit dolorum.
@@ -57,7 +57,7 @@ import ScheduleButton from './ScheduleButton.vue';
             </div>
             <div
               class="shadow-box-bottom-end-dark bg-light rounded-4 px-4 py-2 border border-dark border-4 mb-5 service-card">
-              <h3 class="barrio-font">Commands</h3>
+              <h3 class="primary-font">Commands</h3>
               <p class="my-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti quidem facere ad? Odio at
                 sapiente, nesciunt suscipit velit dolorum.
@@ -85,7 +85,7 @@ import ScheduleButton from './ScheduleButton.vue';
             </div>
             <div
               class="shadow-box-bottom-start-dark bg-light rounded-4 px-4 py-2 border border-dark border-4 mb-5 service-card">
-              <h3 class="barrio-font">Obedience</h3>
+              <h3 class="primary-font">Obedience</h3>
               <p class="my-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti quidem facere ad? Odio at
                 sapiente, nesciunt suscipit velit dolorum.

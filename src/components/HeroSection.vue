@@ -8,7 +8,7 @@ import ScheduleButton from './ScheduleButton.vue';
     <div class="row hero-bg">
       <div class="col-12 align-self-center">
         <div>
-          <img src="/more-dog-logo.webp" alt="More dog logo" class="logo">
+          <img src="/more-dog-logo.webp" alt="More Dog text wrapping around a cartoon dog sleeping" class="logo">
         </div>
       </div>
     </div>
@@ -18,7 +18,9 @@ import ScheduleButton from './ScheduleButton.vue';
       <div class="col-lg-6">
         <div class="d-flex flex-column h-100 my-5">
           <div>
-            <h2 class="fs-1">More Dog is here to help your dog be more like a dog!</h2>
+            <h1 class="fs-1 primary-font">
+              More Dog is a dog training service based out of Vancouver, BC
+            </h1>
             <p class="fs-3">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis harum sequi praesentium necessitatibus
               reprehenderit laboriosam ullam quas provident modi repudiandae?
@@ -36,12 +38,12 @@ import ScheduleButton from './ScheduleButton.vue';
         </div>
       </div>
       <div class="col-lg-6">
-        <div class="my-5">
+        <aside class="my-5">
           <img
             src="https://images.unsplash.com/photo-1560743641-3914f2c45636?q=80&w=1851&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Two dogs taking a walk"
+            alt="A corgi and a terrier walking next to each other"
             class="img-fluid shadow-box-bottom-end-dark rounded-4 border border-dark border-4">
-        </div>
+        </aside>
       </div>
     </div>
   </section>
@@ -57,11 +59,6 @@ import ScheduleButton from './ScheduleButton.vue';
   background-position: center;
 }
 
-h1 {
-  color: var(--bs-light);
-  text-shadow: 2px 2px 4px var(--bs-dark);
-  font-size: 3rem;
-}
 
 ul {
   list-style: none;
@@ -69,12 +66,13 @@ ul {
   margin: 0;
 }
 
-// img {
-//   max-height: 75dvh;
-//   width: 100%;
-//   object-fit: cover;
-//   object-position: bottom;
-// }
+aside img {
+  max-height: 75dvh;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
 .logo {
   max-height: 40dvh;
 }

@@ -25,7 +25,7 @@ async function getImages() {
   <section class="container mt-5">
     <div class="row">
       <div class="col-12">
-        <h2 class="barrio-font">Matt and dogs</h2>
+        <h2 class="primary-font">Matt and dogs</h2>
         <div class="masonry-container">
           <div v-for="image in images" :key="image">
             <img @click="activeImage = image" :src="image.path" :alt="image.name"
