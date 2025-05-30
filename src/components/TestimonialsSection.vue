@@ -4,7 +4,6 @@
 <template>
   <section class="container">
     <div class="row">
-      .col-
     </div>
   </section>
 </template>

@@ -8,7 +8,7 @@ import ScheduleButton from './ScheduleButton.vue';
     <div class="row hero-bg">
       <div class="col-12 align-self-center">
         <div>
-          <img src="/MoreDogFinalLogo.webp" alt="More dog logo" class="logo">
+          <img src="/more-dog-logo.webp" alt="More dog logo" class="logo">
         </div>
       </div>
     </div>
