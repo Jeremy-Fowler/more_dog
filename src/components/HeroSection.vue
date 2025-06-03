@@ -1,4 +1,6 @@
 <script setup>
+import { mdiChevronDoubleRight } from '@mdi/js';
+import MaterialDesignIcon from './MaterialDesignIcon.vue';
 import ScheduleButton from './ScheduleButton.vue';
 </script>
 
@@ -19,15 +21,26 @@ import ScheduleButton from './ScheduleButton.vue';
         <div class="d-flex flex-column h-100 my-5">
           <div>
             <h1 class="fs-1 primary-font">
-              More Dog is a dog training service based out of Vancouver, BC
+              Helping dogs to be more of themselves.
             </h1>
             <p class="fs-3">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis harum sequi praesentium necessitatibus
-              reprehenderit laboriosam ullam quas provident modi repudiandae?
+              Maybe your dog has the constant zoomies. Maybe they've got an overactive sense of stranger danger. Maybe
+              they seem desperate to stop and sniff every single flower that ever bloomed on Earth. Whatever the case,
+              I'll embrace the qualities that make them unique and give them an enriching, confidence-boosting,
+              life-affirming experience. Along the way, I'll help guide them a little closer toward being (even more)
+              responsible pup citizens.
+              <br>
+              <br>
+              You love your dog. <b>I will too.</b>
             </p>
           </div>
           <div class="d-flex gap-3">
-            <ScheduleButton />
+            <ScheduleButton data-bs-target="#scheduleFormModal" data-bs-toggle="modal">
+              <MaterialDesignIcon :icon="mdiChevronDoubleRight" />
+              <b>
+                Book a free consultation
+              </b>
+            </ScheduleButton>
             <!-- FIXME need scrollTo function now -->
             <!-- <a href="#services">
               <button class="btn btn-outline-dark">
@@ -53,10 +66,10 @@ import ScheduleButton from './ScheduleButton.vue';
 
 <style scoped lang="scss">
 .hero-bg {
-  background-image: url(https://images.unsplash.com/photo-1703733566073-cc0e4053a565?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-image: url(../assets/images/main-header.jpg);
   min-height: 60dvh;
   background-size: cover;
-  background-position: center;
+  background-position: 0 1000px;
 }
 
 
@@ -79,7 +92,7 @@ aside img {
 
 @media (max-width: 991.98px) {
   .hero-bg {
-    background-image: url(https://images.unsplash.com/photo-1542583479-28899e4763ea?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: bottom;
   }
 }
 </style>
