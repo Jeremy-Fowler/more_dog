@@ -23,7 +23,7 @@ import ScheduleButton from './ScheduleButton.vue';
             <h1 class="fs-1 primary-font">
               Helping dogs to be more of themselves.
             </h1>
-            <p class="fs-3">
+            <p class="fs-5">
               Maybe your dog has the constant zoomies. Maybe they've got an overactive sense of stranger danger. Maybe
               they seem desperate to stop and sniff every single flower that ever bloomed on Earth. Whatever the case,
               I'll embrace the qualities that make them unique and give them an enriching, confidence-boosting,
@@ -66,7 +66,7 @@ import ScheduleButton from './ScheduleButton.vue';
 
 <style scoped lang="scss">
 .hero-bg {
-  background-image: url(../assets/images/main-header.jpg);
+  background-image: url(@/assets/images/main-header.jpg);
   min-height: 60dvh;
   background-size: cover;
   background-position: 0 1000px;
@@ -88,6 +88,8 @@ aside img {
 
 .logo {
   max-height: 40dvh;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 991.98px) {
