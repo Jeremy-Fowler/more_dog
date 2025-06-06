@@ -1,4 +1,7 @@
 <script setup>
+import { emailsService } from '@/services/EmailsService.js';
+import { reactive } from 'vue';
+
 const sizes = [
   {
     name: 'X-Small',
@@ -21,36 +24,60 @@ const sizes = [
     description: '90+ lbs'
   }
 ]
+
+const editableContactData = reactive({
+  email: '',
+  firstName: '',
+  lastName: '',
+  dogName: '',
+  dogBreed: '',
+  dogSize: '',
+  message: ''
+})
+
+async function contactUs() {
+  try {
+    await emailsService.sendEmail(editableContactData)
+  } catch (error) {
+    console.error('could not send email', error);
+  }
+}
 </script>
 
 
 <template>
-  <form id="contact-form">
+  <form id="contact-form" @submit.prevent="contactUs()">
     <div class="form-floating mb-3">
-      <input type="email" class="form-control" id="contact-email" placeholder="name@example.com" required>
+      <input v-model="editableContactData.email" type="email" class="form-control" id="contact-email"
+        placeholder="name@example.com" required maxlength="100">
       <label for="contact-email">Email address</label>
     </div>
     <div class="d-flex gap-2 mb-3">
       <div class="form-floating flex-grow-1">
-        <input type="text" class="form-control" id="contact-first-name" placeholder="First name..." required>
+        <input v-model="editableContactData.firstName" type="text" class="form-control" id="contact-first-name"
+          placeholder="First name..." required maxlength="100">
         <label for="contact-first-name">First Name</label>
       </div>
       <div class="form-floating flex-grow-1">
-        <input type="text" class="form-control" id="contact-last-name" placeholder="Last name..." required>
+        <input v-model="editableContactData.lastName" type="text" class="form-control" id="contact-last-name"
+          placeholder="Last name..." required maxlength="100">
         <label for="contact-last-name">Last Name</label>
       </div>
     </div>
     <div class="form-floating mb-3">
-      <input type="text" class="form-control" id="contact-dog-name" placeholder="Your dog's name..." required>
+      <input v-model="editableContactData.dogName" type="text" class="form-control" id="contact-dog-name"
+        placeholder="Your dog's name..." required maxlength="100">
       <label for="contact-dog-name">Dog's Name</label>
     </div>
     <div class="d-lg-flex gap-2">
       <div class="form-floating flex-grow-1 mb-3">
-        <input type="text" class="form-control" id="contact-dog-breed" placeholder="Your dog's breed..." required>
+        <input v-model="editableContactData.dogBreed" type="text" class="form-control" id="contact-dog-breed"
+          placeholder="Your dog's breed..." required maxlength="100">
         <label for="contact-dog-breed">Dog's Breed (Approximate)</label>
       </div>
       <div class="form-floating w-lg-25 mb-3">
-        <select class="form-select" id="contact-dog-size" aria-label="Select your dog's size" required>
+        <select v-model="editableContactData.dogSize" class="form-select" id="contact-dog-size"
+          aria-label="Select your dog's size" required>
           <option value="" selected disabled>Select a size</option>
           <option v-for="size in sizes" :key="size.name" :value="size.name" :title="size.description">
             {{ size.name }}
@@ -60,7 +87,8 @@ const sizes = [
       </div>
     </div>
     <div class="form-floating mb-3">
-      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+      <textarea v-model="editableContactData.message" class="form-control" placeholder="Leave a comment here"
+        id="floatingTextarea" maxlength="500"></textarea>
       <label for="floatingTextarea">Comments</label>
     </div>
   </form>
