@@ -28,7 +28,7 @@ const waitingForResponse = ref(false)
       <ContactForm @submitted="waitingForResponse = true" @responded="waitingForResponse = false" />
     </template>
     <template #footer>
-      <button class="btn btn-outline-secondary" data-bs-dismiss="modal">
+      <button class="btn btn-outline-secondary" data-bs-dismiss="modal" type="button">
         Cancel
       </button>
       <button class="btn btn-warning" type="submit" form="contact-form" :disabled="waitingForResponse">
