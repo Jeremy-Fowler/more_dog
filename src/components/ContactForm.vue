@@ -58,6 +58,7 @@ function clearForm() {
   for (const key in editableContactData) {
     editableContactData[key] = ''
   }
+  editableContactData.time = null
 }
 
 </script>
