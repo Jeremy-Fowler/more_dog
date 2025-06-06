@@ -1,6 +1,9 @@
 <script setup>
 import { emailsService } from '@/services/EmailsService.js';
+import { Modal } from 'bootstrap/dist/js/bootstrap.bundle.js';
 import { reactive } from 'vue';
+
+const emit = defineEmits(['submitted', 'responded'])
 
 const sizes = [
   {
@@ -32,16 +35,31 @@ const editableContactData = reactive({
   dogName: '',
   dogBreed: '',
   dogSize: '',
-  message: ''
+  message: '',
+  time: null
 })
 
 async function contactUs() {
   try {
+    emit('submitted')
+    editableContactData.time = new Date()
     await emailsService.sendEmail(editableContactData)
+    clearForm()
+    Modal.getInstance('#scheduleFormModal').hide()
   } catch (error) {
     console.error('could not send email', error);
   }
+  finally {
+    emit('responded')
+  }
 }
+
+function clearForm() {
+  for (const key in editableContactData) {
+    editableContactData[key] = ''
+  }
+}
+
 </script>
 
 
