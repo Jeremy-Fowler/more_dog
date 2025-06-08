@@ -19,8 +19,7 @@ class EmailsService {
   #templateId = 'template_rtuugvj'
 
   async sendEmail(formData) {
-    const response = await emailjs.send(this.#serviceId, this.#templateId, formData)
-    console.log(response);
+    await emailjs.send(this.#serviceId, this.#templateId, formData)
   }
 
 }

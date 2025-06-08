@@ -1,6 +1,7 @@
 <script setup>
 import { emailsService } from '@/services/EmailsService.js';
 import { Modal } from 'bootstrap/dist/js/bootstrap.bundle.js';
+import Swal from 'sweetalert2';
 import { reactive } from 'vue';
 
 const emit = defineEmits(['submitted', 'responded'])
@@ -46,8 +47,21 @@ async function contactUs() {
     await emailsService.sendEmail(editableContactData)
     clearForm()
     Modal.getInstance('#scheduleFormModal').hide()
-  } catch (error) {
-    console.error('could not send email', error);
+    Swal.fire({
+      title: "Thanks " + editableContactData.firstName,
+      text: "We will be in touch with you shortly!",
+      showCloseButton: true,
+      showConfirmButton: false,
+      timer: 3000,
+      imageUrl: "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDgyY2Fna2dwMXo4cnllc3p4NGgwdm12NHRvNHRxb2hkdGhnYnN1NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SwImQhtiNA7io/giphy.gif",
+    });
+  } catch {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Something went wrong! Try re-submitting the form.",
+      footer: '<a href="mailto:matt@moredog.ca" title="Send an email to matt@moredog.ca">Try sending us an email directly</a>'
+    });
   }
   finally {
     emit('responded')
@@ -55,9 +69,10 @@ async function contactUs() {
 }
 
 function clearForm() {
-  for (const key in editableContactData) {
-    editableContactData[key] = ''
-  }
+  editableContactData.message = ''
+  editableContactData.dogName = ''
+  editableContactData.dogBreed = ''
+  editableContactData.dogSize = ''
   editableContactData.time = null
 }
 
@@ -114,4 +129,8 @@ function clearForm() {
 </template>
 
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+textarea {
+  min-height: 20dvh !important;
+}
+</style>
