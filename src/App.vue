@@ -5,6 +5,8 @@ import ModalWrapper from './components/ModalWrapper.vue';
 import FooterSection from './components/FooterSection.vue';
 import ContactForm from './components/ContactForm.vue';
 import { ref } from 'vue';
+import MaterialDesignIcon from './components/MaterialDesignIcon.vue';
+import { mdiLoading } from '@mdi/js';
 
 const waitingForResponse = ref(false)
 </script>
@@ -33,6 +35,7 @@ const waitingForResponse = ref(false)
       </button>
       <button class="btn btn-warning" type="submit" form="contact-form" :disabled="waitingForResponse">
         Submit
+        <MaterialDesignIcon v-if="waitingForResponse" :icon="mdiLoading" spin />
       </button>
     </template>
   </ModalWrapper>
