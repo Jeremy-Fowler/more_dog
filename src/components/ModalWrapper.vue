@@ -9,11 +9,11 @@ defineProps({
 
 
 <template>
-  <div class="modal fade" :id="modalId" tabindex="-1" :aria-labelledby="modalId + 'Label'" aria-hidden="true">
+  <div class="modal fade" :id="modalId" tabindex="-1" :aria-labelledby="modalId + '-label'" aria-hidden="true">
     <div class="modal-dialog" :class="modalSize">
       <div class="modal-content border border-dark border-4">
         <div class="modal-header border-bottom border-dark border-1">
-          <h1 class="modal-title fs-5" :id="modalId + 'Label'">
+          <h1 class="modal-title fs-5" :id="modalId + '-label'">
             <slot name="header"></slot>
           </h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

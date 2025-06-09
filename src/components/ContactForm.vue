@@ -60,7 +60,7 @@ async function contactUs() {
       icon: "error",
       title: "Oops...",
       text: "Something went wrong! Try re-submitting the form.",
-      footer: '<a href="mailto:matt@moredog.ca" title="Send an email to matt@moredog.ca">Try sending us an email directly</a>'
+      footer: '<a href="mailto:matt@moredog.ca" title="Send an email to matt@moredog.ca">You can also directly send us an email</a>'
     });
   }
   finally {

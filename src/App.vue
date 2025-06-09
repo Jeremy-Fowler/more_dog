@@ -22,7 +22,7 @@ const waitingForResponse = ref(false)
     <FooterSection />
   </footer>
 
-  <ModalWrapper modalId="scheduleFormModal" modalSize="modal-lg" showFooter>
+  <ModalWrapper modalId="contact-modal" modalSize="modal-lg" showFooter>
     <template #header>
       Schedule a session
     </template>

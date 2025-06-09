@@ -31,7 +31,7 @@ import ScheduleButton from './ScheduleButton.vue';
       <div class="row py-3">
         <div class="col-lg-4 mb-3">
           <div
-            class="service-card rounded-4 dark-transition-bg text-light h-100 d-flex flex-column justify-content-between">
+            class="service-card rounded-4 dark-transition-bg text-light h-100 d-flex flex-column justify-content-between rounded-4 border border-dark border-4">
             <div class="py-4 px-3 text-shadow">
               <span class="fs-3 primary-font d-block">$45</span>
               <span>One hour</span>
@@ -40,16 +40,21 @@ import ScheduleButton from './ScheduleButton.vue';
                 The ideal mix of brain-buzzing exercise, olfactory engagement, and basic leash work to keep your pup
                 energized and happy.
               </p>
-              <ScheduleButton>
-                <MaterialDesignIcon :icon="mdiChevronDoubleRight" />
-                Book now
-              </ScheduleButton>
             </div>
-            <img src="@/assets/images/A-dog-waiting-to-go-on-a-walk.png" alt="" class="img-fluid">
+            <div>
+              <div class="px-3">
+                <ScheduleButton>
+                  <MaterialDesignIcon :icon="mdiChevronDoubleRight" />
+                  Book now
+                </ScheduleButton>
+              </div>
+              <img src="@/assets/images/A-dog-waiting-to-go-on-a-walk.png" alt="" class="img-fluid">
+            </div>
           </div>
         </div>
         <div class="col-lg-4 mb-3">
-          <div class="service-card rounded-4 bg-dark text-light h-100 d-flex flex-column justify-content-between">
+          <div
+            class="service-card rounded-4 dark-transition-bg text-light h-100 d-flex flex-column justify-content-between rounded-4 border border-dark border-4">
             <div class="py-4 px-3">
               <span class="fs-3 primary-font d-block">$35</span>
               <span>45 minutes</span>
@@ -57,16 +62,21 @@ import ScheduleButton from './ScheduleButton.vue';
               <p class="mb-4">
                 A truncated, joyous adventure that will nonetheless leave your dog ready for a nap afterward.
               </p>
-              <ScheduleButton>
-                <MaterialDesignIcon :icon="mdiChevronDoubleRight" />
-                Book now
-              </ScheduleButton>
             </div>
-            <img src="@/assets/images/A-dog-wearing-a-harness.png" alt="" class="img-fluid">
+            <div>
+              <div class="px-3">
+                <ScheduleButton>
+                  <MaterialDesignIcon :icon="mdiChevronDoubleRight" />
+                  Book now
+                </ScheduleButton>
+              </div>
+              <img src="@/assets/images/A-dog-waiting-to-go-on-a-walk.png" alt="" class="img-fluid">
+            </div>
           </div>
         </div>
         <div class="col-lg-4 mb-3">
-          <div class="service-card rounded-4 bg-dark text-light h-100 d-flex flex-column justify-content-between">
+          <div
+            class="service-card rounded-4 dark-transition-bg text-light h-100 d-flex flex-column justify-content-between rounded-4 border border-dark border-4">
             <div class="py-4 px-3">
               <span class="fs-3 primary-font d-block">$30</span>
               <span>30 minutes</span>
@@ -75,12 +85,16 @@ import ScheduleButton from './ScheduleButton.vue';
                 A short there-and-back-again to give your dog a bathroom opportunity and a bit of excitement in their
                 day.
               </p>
-              <ScheduleButton>
-                <MaterialDesignIcon :icon="mdiChevronDoubleRight" />
-                Book now
-              </ScheduleButton>
             </div>
-            <img src="@/assets/images/luigi-icon.png" alt="" class="img-fluid flex-grow-1">
+            <div>
+              <div class="px-3">
+                <ScheduleButton>
+                  <MaterialDesignIcon :icon="mdiChevronDoubleRight" />
+                  Book now
+                </ScheduleButton>
+              </div>
+              <img src="@/assets/images/A-dog-waiting-to-go-on-a-walk.png" alt="" class="img-fluid">
+            </div>
           </div>
         </div>
       </div>
@@ -97,7 +111,7 @@ import ScheduleButton from './ScheduleButton.vue';
       <div class="row py-3">
         <div class="col-lg-4 mb-3">
           <div
-            class="service-card rounded-4 dark-transition-bg text-light h-100 d-flex flex-column justify-content-between">
+            class="service-card rounded-4 dark-transition-bg text-light h-100 d-flex flex-column justify-content-between rounded-4 border border-dark border-4">
             <div class="py-4 px-3 text-shadow">
               <span class="fs-3 primary-font d-block">$60</span>
               <span>One hour</span>
@@ -105,16 +119,21 @@ import ScheduleButton from './ScheduleButton.vue';
               <p class="mb-4">
                 A safe and stimulating walk that will widen your dog's world and leave 'em pooped and content.
               </p>
-              <ScheduleButton>
-                <MaterialDesignIcon :icon="mdiChevronDoubleRight" />
-                Book now
-              </ScheduleButton>
             </div>
-            <img src="@/assets/images/A-dog-waiting-to-go-on-a-walk.png" alt="" class="img-fluid">
+            <div>
+              <div class="px-3">
+                <ScheduleButton>
+                  <MaterialDesignIcon :icon="mdiChevronDoubleRight" />
+                  Book now
+                </ScheduleButton>
+              </div>
+              <img src="@/assets/images/A-dog-waiting-to-go-on-a-walk.png" alt="" class="img-fluid">
+            </div>
           </div>
         </div>
         <div class="col-lg-4 mb-3">
-          <div class="service-card rounded-4 bg-dark text-light h-100 d-flex flex-column justify-content-between">
+          <div
+            class="service-card rounded-4 dark-transition-bg text-light h-100 d-flex flex-column justify-content-between rounded-4 border border-dark border-4">
             <div class="py-4 px-3">
               <span class="fs-3 primary-font d-block">$47</span>
               <span>45 minutes</span>
@@ -122,16 +141,21 @@ import ScheduleButton from './ScheduleButton.vue';
               <p class="mb-4">
                 A walkabout caper with plenty of time for exercise and good times.
               </p>
-              <ScheduleButton>
-                <MaterialDesignIcon :icon="mdiChevronDoubleRight" />
-                Book now
-              </ScheduleButton>
             </div>
-            <img src="@/assets/images/A-dog-wearing-a-harness.png" alt="" class="img-fluid">
+            <div>
+              <div class="px-3">
+                <ScheduleButton>
+                  <MaterialDesignIcon :icon="mdiChevronDoubleRight" />
+                  Book now
+                </ScheduleButton>
+              </div>
+              <img src="@/assets/images/A-dog-waiting-to-go-on-a-walk.png" alt="" class="img-fluid">
+            </div>
           </div>
         </div>
         <div class="col-lg-4 mb-3">
-          <div class="service-card rounded-4 bg-dark text-light h-100 d-flex flex-column justify-content-between">
+          <div
+            class="service-card rounded-4 dark-transition-bg text-light h-100 d-flex flex-column justify-content-between rounded-4 border border-dark border-4">
             <div class="py-4 px-3">
               <span class="fs-3 primary-font d-block">$40</span>
               <span>30 minutes</span>
@@ -139,12 +163,17 @@ import ScheduleButton from './ScheduleButton.vue';
               <p class="mb-4">
                 A lil' romp that will give 'em time to stretch their legs and smell a fern or two.
               </p>
-              <ScheduleButton>
-                <MaterialDesignIcon :icon="mdiChevronDoubleRight" />
-                Book now
-              </ScheduleButton>
+
             </div>
-            <img src="@/assets/images/luigi-icon.png" alt="" class="img-fluid flex-grow-1">
+            <div>
+              <div class="px-3">
+                <ScheduleButton>
+                  <MaterialDesignIcon :icon="mdiChevronDoubleRight" />
+                  Book now
+                </ScheduleButton>
+              </div>
+              <img src="@/assets/images/A-dog-waiting-to-go-on-a-walk.png" alt="" class="img-fluid">
+            </div>
           </div>
         </div>
       </div>

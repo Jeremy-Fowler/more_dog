@@ -14,13 +14,13 @@ import MaterialDesignIcon from './MaterialDesignIcon.vue';
             <h2 class="fs-6">Social Media</h2>
             <div class="d-flex gap-2">
               <a href="" target="_blank" class="text-light" title="Check us out on Instagram">
-                <MaterialDesignIcon :icon="mdiInstagram" />
+                <MaterialDesignIcon size="24" :icon="mdiInstagram" />
               </a>
               <a href="" target="_blank" class="text-light" title="Check us out on Pinterest">
-                <MaterialDesignIcon :icon="mdiPinterest" />
+                <MaterialDesignIcon size="24" :icon="mdiPinterest" />
               </a>
               <a href="" target="_blank" class="text-light" title="Check us out on Facebook">
-                <MaterialDesignIcon :icon="mdiFacebook" />
+                <MaterialDesignIcon size="24" :icon="mdiFacebook" />
               </a>
             </div>
           </div>

@@ -7,17 +7,16 @@ onMounted(getImages)
 const images = reactive([])
 const activeImage = ref(null)
 
-async function getImages() {
-  const imageFiles = import.meta.glob('/public/images/*.avif')
-  console.log(imageFiles)
+function getImages() {
+  const imageFiles = import.meta.glob('/public/images/*')
   for (const fileName in imageFiles) {
-    const photoName = fileName
-      .substring(fileName.lastIndexOf('/') + 1)
-      .replace(/\.\w+$/, '')
-    images.push({ path: `images/${photoName}.avif`, name: photoName })
+    const filePath = fileName.substring(8)
+    const photoName = filePath.substring(filePath.lastIndexOf('/') + 1).replace(/\.\w+$/, '').replaceAll('-', ' ')
+    images.push({ path: filePath, name: photoName })
   }
-
 }
+
+
 </script>
 
 
@@ -29,7 +28,7 @@ async function getImages() {
         <div class="masonry-container">
           <div v-for="image in images" :key="image">
             <img @click="activeImage = image" :src="image.path" :alt="image.name"
-              class="w-100 mb-3 rounded-4 border border-dark border-4" :title="image.name" data-bs-target="#imageModal"
+              class="w-100 mb-3 rounded-4 border border-dark border-4" data-bs-target="#image-modal"
               data-bs-toggle="modal" role="button">
           </div>
         </div>
@@ -37,7 +36,7 @@ async function getImages() {
     </div>
   </section>
 
-  <ModalWrapper modalId="imageModal">
+  <ModalWrapper modalId="image-modal">
     <template #header>
       Check out this dog
     </template>

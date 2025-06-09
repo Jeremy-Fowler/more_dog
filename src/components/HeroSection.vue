@@ -35,18 +35,12 @@ import ScheduleButton from './ScheduleButton.vue';
             </p>
           </div>
           <div class="d-flex gap-3">
-            <ScheduleButton data-bs-target="#scheduleFormModal" data-bs-toggle="modal">
+            <ScheduleButton data-bs-target="#contact-modal" data-bs-toggle="modal">
               <MaterialDesignIcon :icon="mdiChevronDoubleRight" />
               <b>
                 Book a free consultation
               </b>
             </ScheduleButton>
-            <!-- FIXME need scrollTo function now -->
-            <!-- <a href="#services">
-              <button class="btn btn-outline-dark">
-                Services
-              </button>
-            </a> -->
           </div>
         </div>
       </div>
@@ -66,8 +60,8 @@ import ScheduleButton from './ScheduleButton.vue';
 
 <style scoped lang="scss">
 .hero-bg {
-  background-image: url(@/assets/images/main-header.jpg);
-  min-height: 60dvh;
+  background-image: url(/public/images/a-dog-sniffing-something-in-tall-grass.jpg);
+  min-height: 70dvh;
   background-size: cover;
   background-position: 0 1000px;
 }
