@@ -1,14 +1,16 @@
 <script setup>
-import { RouterView } from 'vue-router'
+import { RouterView, useRoute } from 'vue-router'
 import NavBar from './components/NavBar.vue';
 import ModalWrapper from './components/ModalWrapper.vue';
 import FooterSection from './components/FooterSection.vue';
 import ContactForm from './components/ContactForm.vue';
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 import MaterialDesignIcon from './components/MaterialDesignIcon.vue';
 import { mdiLoading } from '@mdi/js';
 
 const waitingForResponse = ref(false)
+const route = useRoute()
+watch(route, () => { window.scrollTo(0, 0) })
 </script>
 
 <template>
