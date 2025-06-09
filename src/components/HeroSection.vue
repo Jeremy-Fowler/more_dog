@@ -35,7 +35,7 @@ import ScheduleButton from './ScheduleButton.vue';
             </p>
           </div>
           <div class="d-flex gap-3">
-            <ScheduleButton data-bs-target="#contact-modal" data-bs-toggle="modal">
+            <ScheduleButton>
               <MaterialDesignIcon :icon="mdiChevronDoubleRight" />
               <b>
                 Book a free consultation

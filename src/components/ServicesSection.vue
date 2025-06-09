@@ -48,7 +48,7 @@ import ScheduleButton from './ScheduleButton.vue';
                   Book now
                 </ScheduleButton>
               </div>
-              <img src="@/assets/images/A-dog-waiting-to-go-on-a-walk.png" alt="" class="img-fluid">
+              <img src="@/assets/images/a-dog-jumping.png" alt="" class="img-fluid">
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@ import ScheduleButton from './ScheduleButton.vue';
                   Book now
                 </ScheduleButton>
               </div>
-              <img src="@/assets/images/A-dog-waiting-to-go-on-a-walk.png" alt="" class="img-fluid">
+              <img src="@/assets/images/a-brown-dog-licking-his-nose.png" alt="" class="img-fluid">
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@ import ScheduleButton from './ScheduleButton.vue';
                   Book now
                 </ScheduleButton>
               </div>
-              <img src="@/assets/images/A-dog-waiting-to-go-on-a-walk.png" alt="" class="img-fluid">
+              <img src="@/assets/images/a-brown-dog-raising-their-paw.png" alt="" class="img-fluid">
             </div>
           </div>
         </div>
@@ -127,7 +127,7 @@ import ScheduleButton from './ScheduleButton.vue';
                   Book now
                 </ScheduleButton>
               </div>
-              <img src="@/assets/images/A-dog-waiting-to-go-on-a-walk.png" alt="" class="img-fluid">
+              <img src="@/assets/images/a-gray-dog.png" alt="" class="img-fluid">
             </div>
           </div>
         </div>
@@ -149,7 +149,7 @@ import ScheduleButton from './ScheduleButton.vue';
                   Book now
                 </ScheduleButton>
               </div>
-              <img src="@/assets/images/A-dog-waiting-to-go-on-a-walk.png" alt="" class="img-fluid">
+              <img src="@/assets/images/a-brown-dog.png" alt="" class="img-fluid">
             </div>
           </div>
         </div>
@@ -172,7 +172,7 @@ import ScheduleButton from './ScheduleButton.vue';
                   Book now
                 </ScheduleButton>
               </div>
-              <img src="@/assets/images/A-dog-waiting-to-go-on-a-walk.png" alt="" class="img-fluid">
+              <img src="@/assets/images/a-long-haired-dog.png" alt="" class="img-fluid">
             </div>
           </div>
         </div>

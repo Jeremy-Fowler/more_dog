@@ -10,7 +10,9 @@ import { mdiLoading } from '@mdi/js';
 
 const waitingForResponse = ref(false)
 const route = useRoute()
-watch(route, () => { window.scrollTo(0, 0) })
+watch(() => route.name, () => {
+  window.scrollTo(0, 0)
+})
 </script>
 
 <template>
@@ -37,7 +39,7 @@ watch(route, () => { window.scrollTo(0, 0) })
       </button>
       <button class="btn btn-warning" type="submit" form="contact-form" :disabled="waitingForResponse">
         Submit
-        <MaterialDesignIcon v-if="waitingForResponse" :icon="mdiLoading" spin />
+        <MaterialDesignIcon v-if="waitingForResponse" :icon="mdiLoading" spin role="status" />
       </button>
     </template>
   </ModalWrapper>

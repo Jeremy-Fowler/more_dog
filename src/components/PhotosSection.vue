@@ -28,20 +28,20 @@ function getImages() {
         <div class="masonry-container">
           <div v-for="image in images" :key="image">
             <img @click="activeImage = image" :src="image.path" :alt="image.name"
-              class="w-100 mb-3 rounded-4 border border-dark border-4" data-bs-target="#image-modal"
-              data-bs-toggle="modal" role="button">
+              class="mb-3 rounded-4 border border-dark border-4" data-bs-target="#image-modal" data-bs-toggle="modal"
+              role="button">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <ModalWrapper modalId="image-modal">
+  <ModalWrapper modalId="image-modal" modalSize="modal-lg">
     <template #header>
       Check out this dog
     </template>
     <template #body>
-      <img v-if="activeImage" :src="activeImage.path" :alt="activeImage.name" class="img-fluid">
+      <img v-if="activeImage" :src="activeImage.path" :alt="activeImage.name" class="img-fluid w-100">
     </template>
   </ModalWrapper>
 </template>
@@ -59,6 +59,7 @@ function getImages() {
   img {
     min-height: 300px;
     width: 100%;
+    height: auto;
     transition: box-shadow .2s ease-in-out;
     object-fit: cover;
   }

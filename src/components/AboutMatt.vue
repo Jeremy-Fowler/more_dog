@@ -52,6 +52,6 @@
   background-image: url(/public/images/a-man-driving-a-car-with-a-dog-in-the-backseat.JPG);
   min-height: 70dvh;
   background-size: cover;
-  background-position: 0 1000px;
+  background-position: right;
 }
 </style>
